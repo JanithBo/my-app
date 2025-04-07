@@ -1,0 +1,8 @@
+node{
+  stage('SCM Checkout'){
+    git 'https://github.com/JanithBo/my-app'
+  }
+  stage('Compile-Package'){
+      sh 'mav package')
+  }
+}
